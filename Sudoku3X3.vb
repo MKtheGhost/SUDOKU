@@ -93,10 +93,12 @@ Public Class Sudoku3X3
         sudokuGame = gameArray(0)
 
         Dim answerArray = File.ReadAllLines("..\..\sudokuAnswer.txt")
+        sudokuAnswer = answerArray(0)
 
         For Index As Integer = 1 To 81
             sudokuArray(Index).Tag = Index
             sudokuArray(Index).BackColor = Color.FromArgb(17, 17, 40)
+
 
             If sudokuGame(Index - 1) <> "0" Then
                 sudokuArray(Index).Text = sudokuGame(Index - 1)
@@ -104,20 +106,28 @@ Public Class Sudoku3X3
                 sudokuArray(Index).ForeColor = Color.Black
                 sudokuArray(Index).ReadOnly = True
             End If
+
+            If sudokuArray(Index).BackColor <> Color.FromArgb(255, 229, 121) Then
+                'sudokuArray(Index - 1).Text = answerArray(Index - 1)
+            End If
         Next
 
     End Sub
 
     Private Sub giveUpButton_Click(sender As Object, e As EventArgs) Handles giveUpButton.Click
+        Dim gameState As Boolean = False
         For Index As Integer = 1 To sudokuGame.Length
-            If sudokuArray(Index).Text = Nothing Or sudokuArray(Index).Text <> sudokuAnswer(Index - 1) Then
-                Lose.Show()
-            Else
-                Win.Show()
+            If sudokuArray(Index).Text <> sudokuAnswer(Index - 1) Then
+                gameState = True
             End If
-            Me.Hide()
-
         Next
+
+        If gameState = True Then
+            Lose.Show()
+        Else
+            Win.Show()
+        End If
+        Me.Hide()
     End Sub
 
     Private Sub ClickArray(sender As Object, e As EventArgs) Handles Case1_1.Click, Case1_2.Click, Case1_3.Click, Case2_1.Click, Case2_2.Click, Case2_3.Click, Case3_1.Click, Case3_2.Click, Case3_3.Click, Case1_4.Click, Case1_5.Click, Case1_6.Click, Case2_4.Click, Case2_5.Click, Case2_6.Click, Case3_4.Click, Case3_5.Click, Case3_6.Click, Case1_7.Click, Case1_8.Click, Case1_9.Click, Case2_7.Click, Case2_8.Click, Case2_9.Click, Case3_7.Click, Case3_8.Click, Case3_9.Click, Case4_1.Click, Case4_2.Click, Case4_3.Click, Case5_1.Click, Case5_2.Click, Case5_3.Click, Case6_1.Click, Case6_2.Click, Case6_3.Click, Case4_4.Click, Case4_5.Click, Case4_6.Click, Case5_4.Click, Case5_5.Click, Case5_6.Click, Case6_4.Click, Case6_5.Click, Case6_6.Click, Case4_7.Click, Case4_8.Click, Case4_9.Click, Case5_7.Click, Case5_8.Click, Case5_9.Click, Case6_7.Click, Case6_8.Click, Case6_9.Click, Case7_2.Click, Case7_3.Click, Case8_1.Click, Case8_2.Click, Case8_3.Click, Case9_1.Click, Case9_2.Click, Case9_3.Click, Case7_4.Click, Case7_5.Click, Case7_6.Click, Case8_4.Click, Case8_5.Click, Case8_6.Click, Case9_4.Click, Case9_5.Click, Case9_6.Click, Case7_7.Click, Case7_8.Click, Case7_9.Click, Case8_7.Click, Case8_8.Click, Case8_9.Click, Case9_7.Click, Case9_8.Click, Case9_9.Click

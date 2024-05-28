@@ -2,9 +2,13 @@
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form1
+    Dim playerList = File.ReadAllLines("..\..\playerName.txt")
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        playerCB.Items.AddRange(File.ReadAllLines("..\..\playerName.txt"))
+
+
+        playerCB.Items.AddRange(playerList)
+
 
         NameLabel.ForeColor = Color.FromArgb(255, 114, 228)
         playerCB.ForeColor = Color.White
@@ -18,10 +22,11 @@ Public Class Form1
     End Sub
 
     Private Sub addName_Click(sender As Object, e As EventArgs) Handles addNameBtn.Click
-        My.Computer.FileSystem.WriteAllText("..\..\playerName.txt", Environment.NewLine + newNameTBox.Text, True)
-        playerCB.Items.Add(newNameTBox.Text)
-        playerCB.Text = newNameTBox.Text
-
+        If newNameTBox.Text <> "" Then
+            My.Computer.FileSystem.WriteAllText("..\..\playerName.txt", Environment.NewLine + newNameTBox.Text, True)
+            playerCB.Items.Add(newNameTBox.Text)
+            playerCB.Text = newNameTBox.Text
+        End If
     End Sub
 
     Private Sub NewGameBtn_Click(sender As Object, e As EventArgs) Handles NewGameBtn.Click

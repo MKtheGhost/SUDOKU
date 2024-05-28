@@ -33,10 +33,9 @@ Partial Class Lose
         Me.OKBtn.FlatAppearance.BorderSize = 2
         Me.OKBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.OKBtn.ForeColor = System.Drawing.Color.White
-        Me.OKBtn.Location = New System.Drawing.Point(296, 316)
-        Me.OKBtn.Margin = New System.Windows.Forms.Padding(6)
+        Me.OKBtn.Location = New System.Drawing.Point(169, 162)
         Me.OKBtn.Name = "OKBtn"
-        Me.OKBtn.Size = New System.Drawing.Size(208, 73)
+        Me.OKBtn.Size = New System.Drawing.Size(104, 38)
         Me.OKBtn.TabIndex = 12
         Me.OKBtn.Text = "OK"
         Me.OKBtn.UseVisualStyleBackColor = False
@@ -46,22 +45,24 @@ Partial Class Lose
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Impact", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(156, 54)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label2.Location = New System.Drawing.Point(26, 28)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(507, 235)
+        Me.Label2.Size = New System.Drawing.Size(429, 117)
         Me.Label2.TabIndex = 11
-        Me.Label2.Text = "loser"
+        Me.Label2.Text = "you lost ..."
         '
         'Lose
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(457, 253)
         Me.Controls.Add(Me.OKBtn)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Lose"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lose"
         Me.ResumeLayout(False)
         Me.PerformLayout()
