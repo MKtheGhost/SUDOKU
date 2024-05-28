@@ -28,14 +28,14 @@ Partial Class Form1
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.quitGameBtn = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.scoreBtn = New System.Windows.Forms.Button()
+        Me.homeBtn = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.playerCB = New System.Windows.Forms.ComboBox()
         Me.NameLabel = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.sudokuTitle = New System.Windows.Forms.Label()
+        Me.newPlayerLabel = New System.Windows.Forms.Label()
         Me.newNameTBox = New System.Windows.Forms.TextBox()
         Me.addNameBtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
@@ -71,8 +71,8 @@ Partial Class Form1
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.Panel1.Controls.Add(Me.quitGameBtn)
         Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.scoreBtn)
+        Me.Panel1.Controls.Add(Me.homeBtn)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.ForeColor = System.Drawing.Color.White
@@ -114,39 +114,39 @@ Partial Class Form1
         Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Button2
+        'scoreBtn
         '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(0, 144)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(146, 42)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Score"
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.scoreBtn.Dock = System.Windows.Forms.DockStyle.Top
+        Me.scoreBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.scoreBtn.FlatAppearance.BorderSize = 0
+        Me.scoreBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.scoreBtn.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.scoreBtn.ForeColor = System.Drawing.Color.White
+        Me.scoreBtn.Location = New System.Drawing.Point(0, 144)
+        Me.scoreBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.scoreBtn.Name = "scoreBtn"
+        Me.scoreBtn.Size = New System.Drawing.Size(146, 42)
+        Me.scoreBtn.TabIndex = 2
+        Me.scoreBtn.Text = "Score"
+        Me.scoreBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.scoreBtn.UseVisualStyleBackColor = True
         '
-        'Button1
+        'homeBtn
         '
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 2
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(0, 102)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(146, 42)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Home"
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.homeBtn.Dock = System.Windows.Forms.DockStyle.Top
+        Me.homeBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.homeBtn.FlatAppearance.BorderSize = 2
+        Me.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.homeBtn.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.homeBtn.ForeColor = System.Drawing.Color.White
+        Me.homeBtn.Location = New System.Drawing.Point(0, 102)
+        Me.homeBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.homeBtn.Name = "homeBtn"
+        Me.homeBtn.Size = New System.Drawing.Size(146, 42)
+        Me.homeBtn.TabIndex = 1
+        Me.homeBtn.Text = "Home"
+        Me.homeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.homeBtn.UseVisualStyleBackColor = True
         '
         'Panel2
         '
@@ -196,27 +196,27 @@ Partial Class Form1
         Me.NameLabel.TabIndex = 7
         Me.NameLabel.Text = "NAME"
         '
-        'Label2
+        'sudokuTitle
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Impact", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(211, 111)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(363, 117)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "SUDOKU"
+        Me.sudokuTitle.AutoSize = True
+        Me.sudokuTitle.Font = New System.Drawing.Font("Impact", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sudokuTitle.ForeColor = System.Drawing.Color.White
+        Me.sudokuTitle.Location = New System.Drawing.Point(211, 111)
+        Me.sudokuTitle.Name = "sudokuTitle"
+        Me.sudokuTitle.Size = New System.Drawing.Size(363, 117)
+        Me.sudokuTitle.TabIndex = 8
+        Me.sudokuTitle.Text = "SUDOKU"
         '
-        'Label3
+        'newPlayerLabel
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(214, 352)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(91, 18)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "NEW PLAYER"
+        Me.newPlayerLabel.AutoSize = True
+        Me.newPlayerLabel.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.newPlayerLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.newPlayerLabel.Location = New System.Drawing.Point(214, 352)
+        Me.newPlayerLabel.Name = "newPlayerLabel"
+        Me.newPlayerLabel.Size = New System.Drawing.Size(91, 18)
+        Me.newPlayerLabel.TabIndex = 9
+        Me.newPlayerLabel.Text = "NEW PLAYER"
         '
         'newNameTBox
         '
@@ -252,8 +252,8 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(634, 701)
         Me.Controls.Add(Me.addNameBtn)
         Me.Controls.Add(Me.newNameTBox)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.newPlayerLabel)
+        Me.Controls.Add(Me.sudokuTitle)
         Me.Controls.Add(Me.NameLabel)
         Me.Controls.Add(Me.playerCB)
         Me.Controls.Add(Me.Panel1)
@@ -277,14 +277,14 @@ Partial Class Form1
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents homeBtn As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents scoreBtn As Button
     Friend WithEvents quitGameBtn As Button
     Friend WithEvents playerCB As ComboBox
     Friend WithEvents NameLabel As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents sudokuTitle As Label
+    Friend WithEvents newPlayerLabel As Label
     Friend WithEvents newNameTBox As TextBox
     Friend WithEvents addNameBtn As Button
 End Class

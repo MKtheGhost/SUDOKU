@@ -104,6 +104,8 @@ Partial Class Sudoku3X3
         Me.Case7_3 = New System.Windows.Forms.TextBox()
         Me.Case7_2 = New System.Windows.Forms.TextBox()
         Me.Case7_1 = New System.Windows.Forms.TextBox()
+        Me.nameLabel = New System.Windows.Forms.Label()
+        Me.timeLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'giveUpButton
@@ -1091,12 +1093,36 @@ Partial Class Sudoku3X3
         Me.Case7_1.TabIndex = 61
         Me.Case7_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'nameLabel
+        '
+        Me.nameLabel.AutoSize = True
+        Me.nameLabel.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nameLabel.ForeColor = System.Drawing.Color.White
+        Me.nameLabel.Location = New System.Drawing.Point(109, 83)
+        Me.nameLabel.Name = "nameLabel"
+        Me.nameLabel.Size = New System.Drawing.Size(46, 18)
+        Me.nameLabel.TabIndex = 88
+        Me.nameLabel.Text = "Label1"
+        '
+        'timeLabel
+        '
+        Me.timeLabel.AutoSize = True
+        Me.timeLabel.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.timeLabel.ForeColor = System.Drawing.Color.White
+        Me.timeLabel.Location = New System.Drawing.Point(108, 114)
+        Me.timeLabel.Name = "timeLabel"
+        Me.timeLabel.Size = New System.Drawing.Size(52, 19)
+        Me.timeLabel.TabIndex = 89
+        Me.timeLabel.Text = "7m00s"
+        '
         'Sudoku3X3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(638, 615)
+        Me.ClientSize = New System.Drawing.Size(638, 671)
+        Me.Controls.Add(Me.timeLabel)
+        Me.Controls.Add(Me.nameLabel)
         Me.Controls.Add(Me.Case9_9)
         Me.Controls.Add(Me.Case8_9)
         Me.Controls.Add(Me.Case7_9)
@@ -1270,4 +1296,6 @@ Partial Class Sudoku3X3
     Friend WithEvents Case7_3 As TextBox
     Friend WithEvents Case7_2 As TextBox
     Friend WithEvents Case7_1 As TextBox
+    Friend WithEvents nameLabel As Label
+    Friend WithEvents timeLabel As Label
 End Class

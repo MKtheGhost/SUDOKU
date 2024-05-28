@@ -1,11 +1,23 @@
 ﻿Imports System.IO
+Imports System.Reflection.Emit
 
 Public Class Sudoku3X3
     Dim sudokuArray(81) As TextBox
     Dim SelectedCell As Integer
     Dim sudokuGame As String
     Dim sudokuAnswer As String
+
+    Dim WithEvents timerChronometre As New Timer()
+    Dim tempsRestant As TimeSpan = TimeSpan.FromMinutes(7).Add(TimeSpan.FromSeconds(0))
+    Private tempsDebut As DateTime
+    Private tempsFin As DateTime
+    Private tempsEnregistre As TimeSpan
+
     Private Sub Sudoku3X3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        timerChronometre.Interval = 1000
+        timerChronometre.Start()
+        tempsDebut = DateTime.Now
 
         sudokuArray(1) = Case1_1
         sudokuArray(2) = Case1_2
@@ -179,5 +191,39 @@ Public Class Sudoku3X3
             Next
         Next
 
+    End Sub
+
+    Private Sub AfficherTempsRestant()
+        ' Afficher la durée restante dans un format d'horloge
+        timeLabel.Text = tempsRestant.ToString("m\mss\s")
+    End Sub
+
+    Private Sub EnregistrerTemps()
+        ' Calculer le temps écoulé
+        tempsFin = DateTime.Now
+        Dim tempsEcoule As TimeSpan = tempsFin - tempsDebut
+
+        ' Vérifier si le temps écoulé est inférieur à 7 minutes
+        If tempsEcoule < TimeSpan.FromMinutes(7) Then
+            ' Enregistrer le temps écoulé
+            tempsEnregistre = tempsEcoule
+            AjouterPoints(tempsEnregistre)
+            'MessageBox.Show("Temps enregistré : " & tempsEnregistre.ToString("mm\:ss") & " minutes.")
+        End If
+    End Sub
+    Private Sub timerChronometre_Tick(sender As Object, e As EventArgs) Handles timerChronometre.Tick
+        ' Décrémenter la durée restante d'une seconde
+        tempsRestant = tempsRestant.Subtract(TimeSpan.FromSeconds(1))
+        ' Afficher la durée restante mise à jour
+        AfficherTempsRestant()
+
+        ' Vérifier si le temps est écoulé
+        If tempsRestant.TotalSeconds <= 0 Then
+            ' Arrêter le Timer
+            timerChronometre.Stop()
+            EnregistrerTemps()
+            ' Effectuer l'action de fin de jeu
+
+        End If
     End Sub
 End Class

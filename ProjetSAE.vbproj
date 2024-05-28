@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B9D2B705-426E-4638-959C-772BA3FB334B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ProjetSAE.My.MyApplication</StartupObject>
+    <StartupObject>ProjetSAE.Module1</StartupObject>
     <RootNamespace>ProjetSAE</RootNamespace>
     <AssemblyName>ProjetSAE</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -80,6 +80,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LancerApp.vb" />
     <Compile Include="Lose.Designer.vb">
       <DependentUpon>Lose.vb</DependentUpon>
     </Compile>
@@ -90,6 +91,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
