@@ -1096,22 +1096,22 @@ Partial Class Sudoku3X3
         'nameLabel
         '
         Me.nameLabel.AutoSize = True
-        Me.nameLabel.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nameLabel.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nameLabel.ForeColor = System.Drawing.Color.White
-        Me.nameLabel.Location = New System.Drawing.Point(109, 83)
+        Me.nameLabel.Location = New System.Drawing.Point(107, 84)
         Me.nameLabel.Name = "nameLabel"
-        Me.nameLabel.Size = New System.Drawing.Size(46, 18)
+        Me.nameLabel.Size = New System.Drawing.Size(67, 26)
         Me.nameLabel.TabIndex = 88
         Me.nameLabel.Text = "Label1"
         '
         'timeLabel
         '
         Me.timeLabel.AutoSize = True
-        Me.timeLabel.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.timeLabel.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.timeLabel.ForeColor = System.Drawing.Color.White
-        Me.timeLabel.Location = New System.Drawing.Point(108, 114)
+        Me.timeLabel.Location = New System.Drawing.Point(107, 110)
         Me.timeLabel.Name = "timeLabel"
-        Me.timeLabel.Size = New System.Drawing.Size(52, 19)
+        Me.timeLabel.Size = New System.Drawing.Size(70, 26)
         Me.timeLabel.TabIndex = 89
         Me.timeLabel.Text = "7m00s"
         '
@@ -1208,6 +1208,7 @@ Partial Class Sudoku3X3
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Sudoku3X3"
         Me.Opacity = 0.95R
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sudoku3X3"
         Me.ResumeLayout(False)
         Me.PerformLayout()

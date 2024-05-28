@@ -83,7 +83,7 @@ Partial Class Form1
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(146, 701)
+        Me.Panel1.Size = New System.Drawing.Size(146, 667)
         Me.Panel1.TabIndex = 5
         '
         'quitGameBtn
@@ -176,6 +176,8 @@ Partial Class Form1
         '
         'playerCB
         '
+        Me.playerCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.playerCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.playerCB.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.playerCB.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.playerCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -257,7 +259,7 @@ Partial Class Form1
         Me.nameLB.ItemHeight = 19
         Me.nameLB.Location = New System.Drawing.Point(186, 129)
         Me.nameLB.Name = "nameLB"
-        Me.nameLB.Size = New System.Drawing.Size(175, 403)
+        Me.nameLB.Size = New System.Drawing.Size(175, 384)
         Me.nameLB.TabIndex = 12
         '
         'scoreLB
@@ -269,11 +271,13 @@ Partial Class Form1
         Me.scoreLB.ItemHeight = 19
         Me.scoreLB.Location = New System.Drawing.Point(388, 129)
         Me.scoreLB.Name = "scoreLB"
-        Me.scoreLB.Size = New System.Drawing.Size(175, 403)
+        Me.scoreLB.Size = New System.Drawing.Size(175, 384)
         Me.scoreLB.TabIndex = 13
         '
         'searchPlayerCB
         '
+        Me.searchPlayerCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.searchPlayerCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.searchPlayerCB.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.searchPlayerCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.searchPlayerCB.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -302,7 +306,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(634, 701)
+        Me.ClientSize = New System.Drawing.Size(634, 667)
         Me.Controls.Add(Me.showStatsBtn)
         Me.Controls.Add(Me.searchPlayerCB)
         Me.Controls.Add(Me.scoreLB)

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|e:\\vieetudiante\\scolaire\\\u00E9tude sup\\ihm\\developpement\\sae\\projetsae\\stats.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|e:\\vieetudiante\\scolaire\\\u00E9tude sup\\ihm\\developpement\\sae\\projetsae\\lancerapp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:lancerapp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\stats.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:stats.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|e:\\vieetudiante\\scolaire\\\u00E9tude sup\\ihm\\developpement\\sae\\projetsae\\stats.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:stats.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\win.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:win.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -23,16 +19,36 @@
       "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|e:\\vieetudiante\\scolaire\\\u00E9tude sup\\ihm\\developpement\\sae\\projetsae\\sudoku3x3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:sudoku3x3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\stats.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:stats.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\sudoku3x3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:sudoku3x3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|e:\\vieetudiante\\scolaire\\\u00E9tude sup\\ihm\\developpement\\sae\\projetsae\\lancerapp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:lancerapp.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\sudoku3x3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:sudoku3x3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\sudoku1x1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:sudoku1x1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\quitgamemsgbox.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:quitgamemsgbox.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\quitgamemsgbox.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:quitgamemsgbox.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\win.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:win.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\win.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:win.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\lose.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -43,24 +59,12 @@
       "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:lose.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\quitgamemsgbox.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:quitgamemsgbox.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\sudoku1x1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:sudoku1x1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\throwgame.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:throwgame.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\sudoku1x1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:sudoku1x1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\quitgamemsgbox.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|solutionrelative:quitgamemsgbox.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9D2B705-426E-4638-959C-772BA3FB334B}|ProjetSAE.vbproj|E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\throwgame.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -74,136 +78,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "stats.vb",
               "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\stats.vb",
               "RelativeDocumentMoniker": "stats.vb",
               "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\stats.vb",
               "RelativeToolTip": "stats.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-28T10:27:03.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "stats.vb [Design]",
-              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\stats.vb",
-              "RelativeDocumentMoniker": "stats.vb",
-              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\stats.vb [Design]",
-              "RelativeToolTip": "stats.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-28T10:16:25.133Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Win.vb [Design]",
-              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Win.vb",
-              "RelativeDocumentMoniker": "Win.vb",
-              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Win.vb [Design]",
-              "RelativeToolTip": "Win.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-26T15:38:44.88Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Form1.vb",
-              "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Form1.vb",
-              "RelativeToolTip": "Form1.vb",
-              "ViewState": "AQIAAF4AAAAAAAAAAAASwG0AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-24T21:56:20.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Form1.vb",
-              "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Form1.vb [Design]",
-              "RelativeToolTip": "Form1.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-15T09:17:03.139Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Lose.vb",
-              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Lose.vb",
-              "RelativeDocumentMoniker": "Lose.vb",
-              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Lose.vb",
-              "RelativeToolTip": "Lose.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-26T15:44:52.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T10:27:03.907Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Sudoku3X3.vb",
-              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku3X3.vb",
-              "RelativeDocumentMoniker": "Sudoku3X3.vb",
-              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku3X3.vb",
-              "RelativeToolTip": "Sudoku3X3.vb",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAowHIAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-26T09:23:27.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Sudoku3X3.vb [Design]",
               "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku3X3.vb",
               "RelativeDocumentMoniker": "Sudoku3X3.vb",
               "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku3X3.vb [Design]",
               "RelativeToolTip": "Sudoku3X3.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-26T09:08:50.893Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-26T09:08:50.893Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "Sudoku3X3.vb",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku3X3.vb",
+              "RelativeDocumentMoniker": "Sudoku3X3.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku3X3.vb",
+              "RelativeToolTip": "Sudoku3X3.vb",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAwwK8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-26T09:23:27.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Form1.vb",
+              "RelativeDocumentMoniker": "Form1.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Form1.vb",
+              "RelativeToolTip": "Form1.vb",
+              "ViewState": "AQIAAG8AAAAAAAAAAADgv3sAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-24T21:56:20.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "stats.vb [Design]",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\stats.vb",
+              "RelativeDocumentMoniker": "stats.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\stats.vb [Design]",
+              "RelativeToolTip": "stats.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-28T10:16:25.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "LancerApp.vb",
               "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\LancerApp.vb",
               "RelativeDocumentMoniker": "LancerApp.vb",
               "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\LancerApp.vb",
               "RelativeToolTip": "LancerApp.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAvwCgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-05-28T09:25:02.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Lose.vb [Design]",
-              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Lose.vb",
-              "RelativeDocumentMoniker": "Lose.vb",
-              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Lose.vb [Design]",
-              "RelativeToolTip": "Lose.vb [Design]",
+              "DocumentIndex": 3,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Form1.vb",
+              "RelativeDocumentMoniker": "Form1.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Form1.vb [Design]",
+              "RelativeToolTip": "Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-26T15:42:51.916Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-15T09:17:03.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
+              "Title": "Sudoku1x1.vb [Design]",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku1x1.vb",
+              "RelativeDocumentMoniker": "Sudoku1x1.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku1x1.vb [Design]",
+              "RelativeToolTip": "Sudoku1x1.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-25T13:45:02.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QuitGameMsgBox.vb",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\QuitGameMsgBox.vb",
+              "RelativeDocumentMoniker": "QuitGameMsgBox.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\QuitGameMsgBox.vb",
+              "RelativeToolTip": "QuitGameMsgBox.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-25T10:55:44.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "QuitGameMsgBox.vb [Design]",
               "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\QuitGameMsgBox.vb",
               "RelativeDocumentMoniker": "QuitGameMsgBox.vb",
@@ -214,7 +198,53 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Win.vb",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Win.vb",
+              "RelativeDocumentMoniker": "Win.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Win.vb",
+              "RelativeToolTip": "Win.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-28T22:07:20.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Lose.vb",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Lose.vb",
+              "RelativeDocumentMoniker": "Lose.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Lose.vb",
+              "RelativeToolTip": "Lose.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-26T15:44:52.032Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "Win.vb [Design]",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Win.vb",
+              "RelativeDocumentMoniker": "Win.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Win.vb [Design]",
+              "RelativeToolTip": "Win.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-26T15:38:44.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Lose.vb [Design]",
+              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Lose.vb",
+              "RelativeDocumentMoniker": "Lose.vb",
+              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Lose.vb [Design]",
+              "RelativeToolTip": "Lose.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-05-26T15:42:51.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Sudoku1x1.vb",
               "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku1x1.vb",
               "RelativeDocumentMoniker": "Sudoku1x1.vb",
@@ -226,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ThrowGame.vb [Design]",
               "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\ThrowGame.vb",
               "RelativeDocumentMoniker": "ThrowGame.vb",
@@ -237,30 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Sudoku1x1.vb [Design]",
-              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku1x1.vb",
-              "RelativeDocumentMoniker": "Sudoku1x1.vb",
-              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\Sudoku1x1.vb [Design]",
-              "RelativeToolTip": "Sudoku1x1.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-25T13:45:02.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "QuitGameMsgBox.vb",
-              "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\QuitGameMsgBox.vb",
-              "RelativeDocumentMoniker": "QuitGameMsgBox.vb",
-              "ToolTip": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\QuitGameMsgBox.vb",
-              "RelativeToolTip": "QuitGameMsgBox.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-25T10:55:44.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ThrowGame.vb",
               "DocumentMoniker": "E:\\vieEtudiante\\scolaire\\\u00E9tude sup\\IHM\\developpement\\SAE\\ProjetSAE\\ThrowGame.vb",
               "RelativeDocumentMoniker": "ThrowGame.vb",

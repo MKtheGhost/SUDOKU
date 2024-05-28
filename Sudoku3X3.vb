@@ -9,15 +9,12 @@ Public Class Sudoku3X3
 
     Dim WithEvents timerChronometre As New Timer()
     Dim tempsRestant As TimeSpan = TimeSpan.FromMinutes(7).Add(TimeSpan.FromSeconds(0))
-    Private tempsDebut As DateTime
-    Private tempsFin As DateTime
     Private tempsEnregistre As TimeSpan
 
     Private Sub Sudoku3X3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         timerChronometre.Interval = 1000
         timerChronometre.Start()
-        tempsDebut = DateTime.Now
 
         sudokuArray(1) = Case1_1
         sudokuArray(2) = Case1_2
@@ -101,13 +98,15 @@ Public Class Sudoku3X3
         sudokuArray(80) = Case9_8
         sudokuArray(81) = Case9_9
 
-        Dim gameArray = File.ReadAllLines("..\..\sudokuGame.txt")
-        sudokuGame = gameArray(0)
+        ' Initialize the random-number generator
+        Randomize()
+        ' Generate random value between 0 and sudokuGame max index
+        Dim randomGame As Integer = CInt(Int(sudokuGameList.Length * Rnd()))
 
-        Dim answerArray = File.ReadAllLines("..\..\sudokuAnswer.txt")
-        sudokuAnswer = answerArray(0)
+        sudokuGame = sudokuGameList(randomGame)
+        sudokuAnswer = sudokuAnswerList(randomGame)
 
-        nameLabel.Text = tab(loggedPlayer).nickName
+        nameLabel.Text = playerList(currentPlayerIndex).name
 
         For Index As Integer = 1 To 81
             sudokuArray(Index).Tag = Index
@@ -120,16 +119,13 @@ Public Class Sudoku3X3
                 sudokuArray(Index).ForeColor = Color.Black
                 sudokuArray(Index).ReadOnly = True
             End If
-
-            If sudokuArray(Index).BackColor <> Color.FromArgb(255, 229, 121) Then
-                'sudokuArray(Index - 1).Text = answerArray(Index - 1)
-            End If
         Next
 
     End Sub
 
     Private Sub giveUpButton_Click(sender As Object, e As EventArgs) Handles giveUpButton.Click
         Dim gameState As Boolean = False
+        timerChronometre.Stop()
         For Index As Integer = 1 To sudokuGame.Length
             If sudokuArray(Index).Text <> sudokuAnswer(Index - 1) Then
                 gameState = True
@@ -137,8 +133,10 @@ Public Class Sudoku3X3
         Next
 
         If gameState = True Then
+            addPoints(New TimeSpan(0, 0, 0, 0))
             Lose.Show()
         Else
+            addPoints(tempsRestant)
             Win.Show()
         End If
         Me.Hide()
@@ -151,7 +149,6 @@ Public Class Sudoku3X3
         SelectedCell = Val(tempCase.Tag)
         'selectedRow()
         'selectedColumm()
-        'SelectedSquare()
         tempCase.BackColor = Color.FromArgb(255, 114, 228)
 
     End Sub
@@ -174,44 +171,13 @@ Public Class Sudoku3X3
         End While
     End Sub
 
-    Sub SelectedSquare()
-        Dim rowNumber As Integer
-        Dim colNumber As Integer
-
-        If SelectedCell <= 27 Then rowNumber = 1
-        If SelectedCell <= 54 Then rowNumber = 4
-        If SelectedCell <= 81 Then rowNumber = 7
-
-
-        For rowLoop = 0 To 2
-            Dim startIndex As Integer = rowNumber * 9 + colNumber
-            startIndex = startIndex + (9 * rowLoop)
-            Dim endIndex As Integer = startIndex + 2
-
-            For Index = startIndex To endIndex
-                sudokuArray(Index).BackColor = Color.Gray
-            Next
-        Next
-
-    End Sub
-
     Private Sub AfficherTempsRestant()
         ' Afficher la durée restante dans un format d'horloge
         timeLabel.Text = tempsRestant.ToString("m\mss\s")
     End Sub
 
     Private Sub EnregistrerTemps()
-        ' Calculer le temps écoulé
-        tempsFin = DateTime.Now
-        Dim tempsEcoule As TimeSpan = tempsFin - tempsDebut
-
-        ' Vérifier si le temps écoulé est inférieur à 7 minutes
-        If tempsEcoule < TimeSpan.FromMinutes(7) Then
-            ' Enregistrer le temps écoulé
-            tempsEnregistre = tempsEcoule
-            AjouterPoints(tempsEnregistre)
-            'MessageBox.Show("Temps enregistré : " & tempsEnregistre.ToString("mm\:ss") & " minutes.")
-        End If
+        MsgBox(tempsRestant)
     End Sub
     Private Sub timerChronometre_Tick(sender As Object, e As EventArgs) Handles timerChronometre.Tick
         ' Décrémenter la durée restante d'une seconde

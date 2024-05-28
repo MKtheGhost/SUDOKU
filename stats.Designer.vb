@@ -27,6 +27,9 @@ Partial Class stats
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.returnBtn = New System.Windows.Forms.Button()
+        Me.bestTimeLb = New System.Windows.Forms.Label()
+        Me.nbGameLb = New System.Windows.Forms.Label()
+        Me.totalTimeLb = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'bestTimeLabel
@@ -70,7 +73,7 @@ Partial Class stats
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(228, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Candara", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(73, 229)
+        Me.Label2.Location = New System.Drawing.Point(73, 220)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(176, 26)
         Me.Label2.TabIndex = 3
@@ -91,12 +94,54 @@ Partial Class stats
         Me.returnBtn.Text = "return"
         Me.returnBtn.UseVisualStyleBackColor = False
         '
+        'bestTimeLb
+        '
+        Me.bestTimeLb.AutoSize = True
+        Me.bestTimeLb.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bestTimeLb.ForeColor = System.Drawing.Color.White
+        Me.bestTimeLb.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.bestTimeLb.Location = New System.Drawing.Point(371, 137)
+        Me.bestTimeLb.Name = "bestTimeLb"
+        Me.bestTimeLb.Size = New System.Drawing.Size(69, 26)
+        Me.bestTimeLb.TabIndex = 5
+        Me.bestTimeLb.Text = "Label3"
+        Me.bestTimeLb.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'nbGameLb
+        '
+        Me.nbGameLb.AutoSize = True
+        Me.nbGameLb.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nbGameLb.ForeColor = System.Drawing.Color.White
+        Me.nbGameLb.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.nbGameLb.Location = New System.Drawing.Point(371, 179)
+        Me.nbGameLb.Name = "nbGameLb"
+        Me.nbGameLb.Size = New System.Drawing.Size(69, 26)
+        Me.nbGameLb.TabIndex = 6
+        Me.nbGameLb.Text = "Label4"
+        Me.nbGameLb.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'totalTimeLb
+        '
+        Me.totalTimeLb.AutoSize = True
+        Me.totalTimeLb.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalTimeLb.ForeColor = System.Drawing.Color.White
+        Me.totalTimeLb.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.totalTimeLb.Location = New System.Drawing.Point(371, 220)
+        Me.totalTimeLb.Name = "totalTimeLb"
+        Me.totalTimeLb.Size = New System.Drawing.Size(69, 26)
+        Me.totalTimeLb.TabIndex = 7
+        Me.totalTimeLb.Text = "Label5"
+        Me.totalTimeLb.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'stats
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(518, 387)
+        Me.Controls.Add(Me.totalTimeLb)
+        Me.Controls.Add(Me.nbGameLb)
+        Me.Controls.Add(Me.bestTimeLb)
         Me.Controls.Add(Me.returnBtn)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -117,4 +162,7 @@ Partial Class stats
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents returnBtn As Button
+    Friend WithEvents bestTimeLb As Label
+    Friend WithEvents nbGameLb As Label
+    Friend WithEvents totalTimeLb As Label
 End Class

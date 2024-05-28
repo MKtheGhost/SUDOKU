@@ -5,6 +5,7 @@
     End Sub
 
     Private Sub yes_Click(sender As Object, e As EventArgs) Handles yesQuit.Click
+        updateData()
         Application.Exit()
     End Sub
 End Class

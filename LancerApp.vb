@@ -1,57 +1,105 @@
 ﻿Imports System.IO
+Imports System.Reflection
+Imports Microsoft.Office.Interop.Excel
 
-Module Module1
-    Public Structure joeur
-        Dim nickName As String
-        Dim points As Double
+Module dataManipulation
+    Public Structure player
+        Dim name As String
+        Dim totalTime As TimeSpan
+        Dim bestTime As TimeSpan
+        Dim nbGame As Integer
     End Structure
 
-    Public tab As joeur()
-    Private cpt As Integer = 0
-    Private dataList As List(Of String)
-    Public loggedPlayer As Integer
+    'list of players
+    Public playerList() As player
+    Public currentPlayerIndex As Integer
 
+    'list of game and answers
+    Public sudokuGameList = File.ReadAllLines("..\..\data\sudokuGame.txt")
+    Public sudokuAnswerList = File.ReadAllLines("..\..\data\sudokuAnswer.txt")
 
-    Public Sub AjouterJoeur(j As joeur)
-        'redim si plein
-        If tab.Length = cpt Then
-            ReDim tab(cpt + 2)
-        Else
-            tab(cpt) = j
-            cpt += 1
-        End If
+    Public Sub loadPlayer()
+        Dim nameList = File.ReadAllLines("..\..\data\playerName.txt")
+        Dim totalTimeList = File.ReadAllLines("..\..\data\totalTime.txt")
+        Dim bestTimeList = File.ReadAllLines("..\..\data\bestTime.txt")
+        Dim nbGameList = File.ReadAllLines("..\..\data\nbGame.txt")
+
+        ReDim playerList(nameList.Length - 1)
+
+        For Index As Integer = 0 To nameList.Length - 1
+            playerList(Index) = New player()
+            playerList(Index).name = nameList(Index)
+            playerList(Index).totalTime = TimeSpan.Parse(totalTimeList(Index))
+            playerList(Index).bestTime = TimeSpan.Parse(bestTimeList(Index))
+            playerList(Index).nbGame = Integer.Parse(nbGameList(Index))
+
+        Next
+    End Sub
+
+    'add a new player to playerList
+    Public Sub addPlayer(name As String)
+        ReDim Preserve playerList(playerList.Length)
+        playerList(playerList.Length - 1) = New player()
+        playerList(playerList.Length - 1).name = name
+        playerList(playerList.Length - 1).totalTime = New TimeSpan(0, 0, 0, 0)
+        playerList(playerList.Length - 1).bestTime = New TimeSpan(0, 0, 0, 0)
+        playerList(playerList.Length - 1).nbGame = 0
 
     End Sub
 
-    Public Function Existent(nickName As String) As Boolean
-        For i As Integer = 0 To cpt < i
-            If tab(i).nickName = nickName Then
+    'verify if a player s already registered
+    Public Function playerExists(name As String) As Boolean
+        For Index As Integer = 0 To playerList.Length - 1
+            If playerList(Index).name = name Then
                 Return True
             End If
         Next
         Return False
     End Function
 
-    Public Sub NewGame(player As ComboBox)
-        For i As Integer = 0 To cpt < i
-            If tab(i).nickName = player.Text Then
-                loggedPlayer = i
-            Else
-                'player n'est pas dans la base
+    'get current player's index
+    Public Sub getCurrentIndex(currentPlayer As String)
+        For Index As Integer = 0 To playerList.Length - 1
+            If currentPlayer = playerList(Index).name Then
+                currentPlayerIndex = Index
+                Exit For
             End If
         Next
     End Sub
 
-    Public Sub AjouterPoints(tempsEnregistre As TimeSpan)
-        Dim points As Double = tempsEnregistre.TotalMinutes
-        tab(loggedPlayer).points = points
-    End Sub
-    Public Sub main()
-        'preparation des données
-        'dataList = File.ReadAllLines("..\..\playerName.txt").ToList()
-        ReDim tab(0)
+    'update points to current player
+    Public Sub addPoints(time As TimeSpan)
+        playerList(currentPlayerIndex).totalTime += time
+        'MsgBox(time.ToString("m\mss\s"))
+        'MsgBox(playerList(currentPlayerIndex).totalTime.ToString("m\mss\s"))
 
-        'lancement interactions utilisateur
-        Application.Run(Form1)
+        If time.CompareTo(playerList(currentPlayerIndex).bestTime) > 0 Then
+            playerList(currentPlayerIndex).bestTime = time
+            'MsgBox(playerList(currentPlayerIndex).bestTime.ToString("m\mss\s"))
+        End If
+        playerList(currentPlayerIndex).nbGame += 1
+
     End Sub
+
+    'update data at the end of game
+    Public Sub updateData()
+        Dim nameWriter As New System.IO.StreamWriter("..\..\data\playerName.txt", False)
+        Dim totalTimeWriter As New System.IO.StreamWriter("..\..\data\totalTime.txt", False)
+        Dim bestTimeWriter As New System.IO.StreamWriter("..\..\data\bestTime.txt", False)
+        Dim nbGameWriter As New System.IO.StreamWriter("..\..\data\nbGame.txt", False)
+
+        For Index As Integer = 0 To playerList.Length - 1
+            nameWriter.WriteLine(playerList(Index).name)
+            totalTimeWriter.WriteLine(playerList(Index).totalTime)
+            bestTimeWriter.WriteLine(playerList(Index).bestTime)
+            nbGameWriter.WriteLine(playerList(Index).nbGame)
+        Next
+
+        nameWriter.Close()
+        totalTimeWriter.Close()
+        bestTimeWriter.Close()
+        nbGameWriter.Close()
+
+    End Sub
+
 End Module

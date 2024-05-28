@@ -2,11 +2,27 @@
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form1
-    Dim playerList = File.ReadAllLines("..\..\playerName.txt")
+
+    Dim executeOnce As Boolean = False
+    Dim currentplayer As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If executeOnce = False Then
+            loadPlayer()
+            executeOnce = True
+        End If
 
-        playerCB.Items.AddRange(playerList)
+        playerCB.Items.Clear()
+        nameLB.Items.Clear()
+        scoreLB.Items.Clear()
+
+        For Index As Integer = 0 To playerList.Length() - 1
+            playerCB.Items.Add(playerList(Index).name)
+            searchPlayerCB.Items.Add(playerList(Index).name)
+            nameLB.Items.Add(playerList(Index).name)
+            scoreLB.Items.Add(playerList(Index).bestTime)
+        Next
+
         NameLabel.ForeColor = Color.FromArgb(255, 114, 228)
         playerCB.ForeColor = Color.White
         playerCB.Text = ""
@@ -18,13 +34,15 @@ Public Class Form1
 
     End Sub
 
+    'quit game button
     Private Sub quitGame_Click(sender As Object, e As EventArgs) Handles quitGameBtn.Click
-        'Me.Hide()
+        Me.Hide()
         QuitGameMsgBox.Show()
     End Sub
 
-    Private Function estValide() As Boolean
-        If Not String.IsNullOrWhiteSpace(newNameTBox.Text) Then
+    ' check if input in newNameTBox is correct
+    Private Function estValide(text As String) As Boolean
+        If Not String.IsNullOrWhiteSpace(text) Then
             Return True
         Else
             Return False
@@ -32,32 +50,30 @@ Public Class Form1
 
     End Function
 
+    ' add new player to playerList if input is correct
     Private Sub addName_Click(sender As Object, e As EventArgs) Handles addNameBtn.Click
-        If estValide() Then ' Verifie si le text es valide
-            If Not Existent(newNameTBox.Text) Then 'verifie se le nickname existe ou pas
-                Dim j As joeur
-                j.nickName = newNameTBox.Text
-                j.points = 0
-                AjouterJoeur(j)
-                My.Computer.FileSystem.WriteAllText("..\..\playerName.txt", Environment.NewLine + newNameTBox.Text, True)
+        If estValide(newNameTBox.Text) Then ' Verifie si le text es valide
+            If Not playerExists(newNameTBox.Text) Then 'verifie se le nickname existe ou pas
+                addPlayer(newNameTBox.Text)
                 playerCB.Text = newNameTBox.Text
                 playerCB.Items.Add(newNameTBox.Text)
             Else
-                MsgBox("Personne deja existante")
+                MsgBox("existing player")
             End If
         Else
-            MsgBox("Erreur")
+            MsgBox("input error")
         End If
     End Sub
 
+    ' start a game only if a player was chosen in playerCB
     Private Sub NewGameBtn_Click(sender As Object, e As EventArgs) Handles NewGameBtn.Click
-        If playerCB.Text = "" Then
+        If Not estValide(playerCB.Text) Then
             NameLabel.ForeColor = Color.Red
             playerCB.ForeColor = Color.Red
             playerCB.Text = "Enter name"
         Else
+            getCurrentIndex(playerCB.Text)
             Form1_Load(sender, e)
-            NewGame(playerCB)
             Me.Hide()
             Sudoku3X3.Show()
         End If
@@ -67,12 +83,6 @@ Public Class Form1
         playerCB.ForeColor = Color.White
 
     End Sub
-
-    Private Sub PlayerCB_TextChanged(sender As Object, e As EventArgs) Handles playerCB.TextChanged
-        playerCB.DroppedDown = True
-    End Sub
-
-
 
     Private Sub scoreBtn_Click(sender As Object, e As EventArgs) Handles scoreBtn.Click
         homeBtn.FlatAppearance.BorderSize = 0
@@ -111,6 +121,23 @@ Public Class Form1
 
     Private Sub showStatsBtn_Click(sender As Object, e As EventArgs) Handles showStatsBtn.Click
         Me.Hide()
+        getCurrentIndex(searchPlayerCB.Text)
         stats.Show()
+    End Sub
+
+    Private Sub searchPlayerCB_SelectedIndexChanged(sender As Object, e As EventArgs) Handles searchPlayerCB.SelectedIndexChanged
+        If searchPlayerCB IsNot Nothing Then
+            getCurrentIndex(searchPlayerCB.Text)
+            nameLB.SelectedIndex = currentPlayerIndex
+        End If
+    End Sub
+
+    Private Sub nameLB_SelectedIndexChanged(sender As Object, e As EventArgs) Handles nameLB.SelectedIndexChanged
+        If nameLB.SelectedItems IsNot Nothing Then
+            searchPlayerCB.Text = nameLB.Text
+            getCurrentIndex(searchPlayerCB.Text)
+
+        End If
+        searchPlayerCB.Text = nameLB.Text
     End Sub
 End Class
