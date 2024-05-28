@@ -9,7 +9,7 @@ Module Module1
     Public tab As joeur()
     Private cpt As Integer = 0
     Private dataList As List(Of String)
-    Private loggedPlayer As Integer
+    Public loggedPlayer As Integer
 
 
     Public Sub AjouterJoeur(j As joeur)

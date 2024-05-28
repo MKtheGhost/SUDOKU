@@ -11,6 +11,11 @@ Public Class Form1
         playerCB.ForeColor = Color.White
         playerCB.Text = ""
 
+        nameLB.Hide()
+        scoreLB.Hide()
+        searchPlayerCB.Hide()
+        showStatsBtn.Hide()
+
     End Sub
 
     Private Sub quitGame_Click(sender As Object, e As EventArgs) Handles quitGameBtn.Click
@@ -72,6 +77,12 @@ Public Class Form1
     Private Sub scoreBtn_Click(sender As Object, e As EventArgs) Handles scoreBtn.Click
         homeBtn.FlatAppearance.BorderSize = 0
         scoreBtn.FlatAppearance.BorderSize = 1
+
+        nameLB.Show()
+        scoreLB.Show()
+        searchPlayerCB.Show()
+        showStatsBtn.Show()
+
         sudokuTitle.Hide()
         NameLabel.Hide()
         playerCB.Hide()
@@ -79,5 +90,27 @@ Public Class Form1
         newNameTBox.Hide()
         addNameBtn.Hide()
         NewGameBtn.Hide()
+    End Sub
+
+    Private Sub homeBtn_Click(sender As Object, e As EventArgs) Handles homeBtn.Click
+        homeBtn.FlatAppearance.BorderSize = 1
+        scoreBtn.FlatAppearance.BorderSize = 0
+        sudokuTitle.Show()
+        NameLabel.Show()
+        playerCB.Show()
+        newPlayerLabel.Show()
+        newNameTBox.Show()
+        addNameBtn.Show()
+        NewGameBtn.Show()
+
+        nameLB.Hide()
+        scoreLB.Hide()
+        searchPlayerCB.Hide()
+        showStatsBtn.Hide()
+    End Sub
+
+    Private Sub showStatsBtn_Click(sender As Object, e As EventArgs) Handles showStatsBtn.Click
+        Me.Hide()
+        stats.Show()
     End Sub
 End Class

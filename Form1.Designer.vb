@@ -38,6 +38,10 @@ Partial Class Form1
         Me.newPlayerLabel = New System.Windows.Forms.Label()
         Me.newNameTBox = New System.Windows.Forms.TextBox()
         Me.addNameBtn = New System.Windows.Forms.Button()
+        Me.nameLB = New System.Windows.Forms.ListBox()
+        Me.scoreLB = New System.Windows.Forms.ListBox()
+        Me.searchPlayerCB = New System.Windows.Forms.ComboBox()
+        Me.showStatsBtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -244,12 +248,65 @@ Partial Class Form1
         Me.addNameBtn.Text = "Add"
         Me.addNameBtn.UseVisualStyleBackColor = False
         '
+        'nameLB
+        '
+        Me.nameLB.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.nameLB.Font = New System.Drawing.Font("Candara", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nameLB.ForeColor = System.Drawing.Color.White
+        Me.nameLB.FormattingEnabled = True
+        Me.nameLB.ItemHeight = 19
+        Me.nameLB.Location = New System.Drawing.Point(186, 129)
+        Me.nameLB.Name = "nameLB"
+        Me.nameLB.Size = New System.Drawing.Size(175, 403)
+        Me.nameLB.TabIndex = 12
+        '
+        'scoreLB
+        '
+        Me.scoreLB.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.scoreLB.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.scoreLB.ForeColor = System.Drawing.Color.White
+        Me.scoreLB.FormattingEnabled = True
+        Me.scoreLB.ItemHeight = 19
+        Me.scoreLB.Location = New System.Drawing.Point(388, 129)
+        Me.scoreLB.Name = "scoreLB"
+        Me.scoreLB.Size = New System.Drawing.Size(175, 403)
+        Me.scoreLB.TabIndex = 13
+        '
+        'searchPlayerCB
+        '
+        Me.searchPlayerCB.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.searchPlayerCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.searchPlayerCB.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchPlayerCB.ForeColor = System.Drawing.Color.White
+        Me.searchPlayerCB.FormattingEnabled = True
+        Me.searchPlayerCB.Location = New System.Drawing.Point(193, 88)
+        Me.searchPlayerCB.Name = "searchPlayerCB"
+        Me.searchPlayerCB.Size = New System.Drawing.Size(120, 26)
+        Me.searchPlayerCB.TabIndex = 14
+        '
+        'showStatsBtn
+        '
+        Me.showStatsBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.showStatsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.showStatsBtn.Font = New System.Drawing.Font("Candara", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.showStatsBtn.ForeColor = System.Drawing.Color.White
+        Me.showStatsBtn.Location = New System.Drawing.Point(451, 549)
+        Me.showStatsBtn.Name = "showStatsBtn"
+        Me.showStatsBtn.Size = New System.Drawing.Size(112, 33)
+        Me.showStatsBtn.TabIndex = 15
+        Me.showStatsBtn.Text = "Show stats"
+        Me.showStatsBtn.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(634, 701)
+        Me.Controls.Add(Me.showStatsBtn)
+        Me.Controls.Add(Me.searchPlayerCB)
+        Me.Controls.Add(Me.scoreLB)
+        Me.Controls.Add(Me.nameLB)
         Me.Controls.Add(Me.addNameBtn)
         Me.Controls.Add(Me.newNameTBox)
         Me.Controls.Add(Me.newPlayerLabel)
@@ -287,4 +344,8 @@ Partial Class Form1
     Friend WithEvents newPlayerLabel As Label
     Friend WithEvents newNameTBox As TextBox
     Friend WithEvents addNameBtn As Button
+    Friend WithEvents nameLB As ListBox
+    Friend WithEvents scoreLB As ListBox
+    Friend WithEvents searchPlayerCB As ComboBox
+    Friend WithEvents showStatsBtn As Button
 End Class

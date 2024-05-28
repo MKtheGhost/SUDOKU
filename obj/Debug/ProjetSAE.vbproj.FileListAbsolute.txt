@@ -17,3 +17,4 @@ E:\vieEtudiante\scolaire\étude sup\IHM\developpement\SAE\ProjetSAE\obj\Debug\Pr
 E:\vieEtudiante\scolaire\étude sup\IHM\developpement\SAE\ProjetSAE\obj\Debug\ProjetSAE.Sudoku3X3.resources
 E:\vieEtudiante\scolaire\étude sup\IHM\developpement\SAE\ProjetSAE\obj\Debug\ProjetSAE.Lose.resources
 E:\vieEtudiante\scolaire\étude sup\IHM\developpement\SAE\ProjetSAE\obj\Debug\ProjetSAE.Win.resources
+E:\vieEtudiante\scolaire\étude sup\IHM\developpement\SAE\ProjetSAE\obj\Debug\ProjetSAE.stats.resources

@@ -107,10 +107,12 @@ Public Class Sudoku3X3
         Dim answerArray = File.ReadAllLines("..\..\sudokuAnswer.txt")
         sudokuAnswer = answerArray(0)
 
+        nameLabel.Text = tab(loggedPlayer).nickName
+
         For Index As Integer = 1 To 81
             sudokuArray(Index).Tag = Index
             sudokuArray(Index).BackColor = Color.FromArgb(17, 17, 40)
-
+            sudokuArray(Index).MaxLength = 1
 
             If sudokuGame(Index - 1) <> "0" Then
                 sudokuArray(Index).Text = sudokuGame(Index - 1)
