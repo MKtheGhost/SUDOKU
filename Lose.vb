@@ -13,4 +13,8 @@ Public Class Lose
 
         Form1.Show()
     End Sub
+
+    Private Sub Lose_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

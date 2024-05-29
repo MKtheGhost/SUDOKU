@@ -8,7 +8,7 @@ Public Class Sudoku3X3
     Dim sudokuAnswer As String
 
     Dim WithEvents timerChronometre As New Timer()
-    Dim tempsRestant As TimeSpan = TimeSpan.FromMinutes(7).Add(TimeSpan.FromSeconds(0))
+    Dim tempsRestant As TimeSpan = TimeSpan.FromMinutes(1).Add(TimeSpan.FromSeconds(0))
     Private tempsEnregistre As TimeSpan
 
     Private Sub Sudoku3X3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -176,9 +176,6 @@ Public Class Sudoku3X3
         timeLabel.Text = tempsRestant.ToString("m\mss\s")
     End Sub
 
-    Private Sub EnregistrerTemps()
-        MsgBox(tempsRestant)
-    End Sub
     Private Sub timerChronometre_Tick(sender As Object, e As EventArgs) Handles timerChronometre.Tick
         ' Décrémenter la durée restante d'une seconde
         tempsRestant = tempsRestant.Subtract(TimeSpan.FromSeconds(1))
@@ -189,7 +186,9 @@ Public Class Sudoku3X3
         If tempsRestant.TotalSeconds <= 0 Then
             ' Arrêter le Timer
             timerChronometre.Stop()
-            EnregistrerTemps()
+            addPoints(New TimeSpan(0, 0, 0, 0))
+            Me.Hide()
+            Lose.Show()
             ' Effectuer l'action de fin de jeu
 
         End If

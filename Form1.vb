@@ -31,6 +31,9 @@ Public Class Form1
         scoreLB.Hide()
         searchPlayerCB.Hide()
         showStatsBtn.Hide()
+        sortByTimeBtn.Hide()
+        sortByNameBtn.Hide()
+        sortLabel.Hide()
 
     End Sub
 
@@ -92,6 +95,9 @@ Public Class Form1
         scoreLB.Show()
         searchPlayerCB.Show()
         showStatsBtn.Show()
+        sortByTimeBtn.Show()
+        sortByNameBtn.Show()
+        sortLabel.Show()
 
         sudokuTitle.Hide()
         NameLabel.Hide()
@@ -117,11 +123,20 @@ Public Class Form1
         scoreLB.Hide()
         searchPlayerCB.Hide()
         showStatsBtn.Hide()
+        sortByTimeBtn.Hide()
+        sortByNameBtn.Hide()
+        sortLabel.Hide()
     End Sub
 
     Private Sub showStatsBtn_Click(sender As Object, e As EventArgs) Handles showStatsBtn.Click
+
         Me.Hide()
-        getCurrentIndex(searchPlayerCB.Text)
+
+        stats.nameLabel.Text = playerList(currentPlayerIndex).name
+        stats.bestTimeLb.Text = playerList(currentPlayerIndex).bestTime.ToString("m\mss\s")
+        stats.totalTimeLb.Text = playerList(currentPlayerIndex).totalTime.ToString("m\mss\s")
+        stats.nbGameLb.Text = playerList(currentPlayerIndex).nbGame
+
         stats.Show()
     End Sub
 
@@ -135,9 +150,29 @@ Public Class Form1
     Private Sub nameLB_SelectedIndexChanged(sender As Object, e As EventArgs) Handles nameLB.SelectedIndexChanged
         If nameLB.SelectedItems IsNot Nothing Then
             searchPlayerCB.Text = nameLB.Text
-            getCurrentIndex(searchPlayerCB.Text)
 
         End If
-        searchPlayerCB.Text = nameLB.Text
+    End Sub
+
+    Private Sub sortByNameBtn_Click(sender As Object, e As EventArgs) Handles sortByNameBtn.Click
+        nameLB.Sorted = True
+        scoreLB.Items.Clear()
+        For Index As Integer = 0 To playerList.Length - 1
+            getCurrentIndex(nameLB.Items(Index))
+            scoreLB.Items.Add(playerList(currentPlayerIndex).bestTime)
+        Next
+    End Sub
+
+    Private Sub sortByTimeBtn_Click(sender As Object, e As EventArgs) Handles sortByTimeBtn.Click
+
+        Dim arr(scoreLB.Items.Count - 1) As Object
+
+        scoreLB.Sorted = True
+        scoreLB.Items.CopyTo(arr, 0)
+        Array.Reverse(arr)
+        scoreLB.Items.Clear()
+        scoreLB.Sorted = False
+        scoreLB.Items.AddRange(arr)
+
     End Sub
 End Class

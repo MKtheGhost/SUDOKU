@@ -42,6 +42,9 @@ Partial Class Form1
         Me.scoreLB = New System.Windows.Forms.ListBox()
         Me.searchPlayerCB = New System.Windows.Forms.ComboBox()
         Me.showStatsBtn = New System.Windows.Forms.Button()
+        Me.sortLabel = New System.Windows.Forms.Label()
+        Me.sortByNameBtn = New System.Windows.Forms.Button()
+        Me.sortByTimeBtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,7 +84,7 @@ Partial Class Form1
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.ForeColor = System.Drawing.Color.White
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(146, 667)
         Me.Panel1.TabIndex = 5
@@ -94,7 +97,7 @@ Partial Class Form1
         Me.quitGameBtn.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.quitGameBtn.ForeColor = System.Drawing.Color.White
         Me.quitGameBtn.Location = New System.Drawing.Point(2, 563)
-        Me.quitGameBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.quitGameBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.quitGameBtn.Name = "quitGameBtn"
         Me.quitGameBtn.Size = New System.Drawing.Size(142, 38)
         Me.quitGameBtn.TabIndex = 4
@@ -110,7 +113,7 @@ Partial Class Form1
         Me.Button3.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
         Me.Button3.Location = New System.Drawing.Point(0, 186)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(146, 42)
         Me.Button3.TabIndex = 3
@@ -127,7 +130,7 @@ Partial Class Form1
         Me.scoreBtn.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.scoreBtn.ForeColor = System.Drawing.Color.White
         Me.scoreBtn.Location = New System.Drawing.Point(0, 144)
-        Me.scoreBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.scoreBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.scoreBtn.Name = "scoreBtn"
         Me.scoreBtn.Size = New System.Drawing.Size(146, 42)
         Me.scoreBtn.TabIndex = 2
@@ -144,7 +147,7 @@ Partial Class Form1
         Me.homeBtn.Font = New System.Drawing.Font("Candara", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.homeBtn.ForeColor = System.Drawing.Color.White
         Me.homeBtn.Location = New System.Drawing.Point(0, 102)
-        Me.homeBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.homeBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.homeBtn.Name = "homeBtn"
         Me.homeBtn.Size = New System.Drawing.Size(146, 42)
         Me.homeBtn.TabIndex = 1
@@ -157,7 +160,7 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(146, 102)
         Me.Panel2.TabIndex = 0
@@ -167,7 +170,7 @@ Partial Class Form1
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(18, 20)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(102, 62)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -259,7 +262,7 @@ Partial Class Form1
         Me.nameLB.ItemHeight = 19
         Me.nameLB.Location = New System.Drawing.Point(186, 129)
         Me.nameLB.Name = "nameLB"
-        Me.nameLB.Size = New System.Drawing.Size(175, 384)
+        Me.nameLB.Size = New System.Drawing.Size(175, 365)
         Me.nameLB.TabIndex = 12
         '
         'scoreLB
@@ -271,7 +274,7 @@ Partial Class Form1
         Me.scoreLB.ItemHeight = 19
         Me.scoreLB.Location = New System.Drawing.Point(388, 129)
         Me.scoreLB.Name = "scoreLB"
-        Me.scoreLB.Size = New System.Drawing.Size(175, 384)
+        Me.scoreLB.Size = New System.Drawing.Size(175, 365)
         Me.scoreLB.TabIndex = 13
         '
         'searchPlayerCB
@@ -301,12 +304,55 @@ Partial Class Form1
         Me.showStatsBtn.Text = "Show stats"
         Me.showStatsBtn.UseVisualStyleBackColor = False
         '
+        'sortLabel
+        '
+        Me.sortLabel.AutoSize = True
+        Me.sortLabel.Font = New System.Drawing.Font("Candara", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sortLabel.ForeColor = System.Drawing.Color.White
+        Me.sortLabel.Location = New System.Drawing.Point(354, 89)
+        Me.sortLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.sortLabel.Name = "sortLabel"
+        Me.sortLabel.Size = New System.Drawing.Size(64, 19)
+        Me.sortLabel.TabIndex = 16
+        Me.sortLabel.Text = "Sort by :"
+        '
+        'sortByNameBtn
+        '
+        Me.sortByNameBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(97, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.sortByNameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.sortByNameBtn.Font = New System.Drawing.Font("Candara", 12.0!)
+        Me.sortByNameBtn.ForeColor = System.Drawing.Color.White
+        Me.sortByNameBtn.Location = New System.Drawing.Point(428, 83)
+        Me.sortByNameBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sortByNameBtn.Name = "sortByNameBtn"
+        Me.sortByNameBtn.Size = New System.Drawing.Size(62, 28)
+        Me.sortByNameBtn.TabIndex = 17
+        Me.sortByNameBtn.Text = "Name"
+        Me.sortByNameBtn.UseVisualStyleBackColor = False
+        '
+        'sortByTimeBtn
+        '
+        Me.sortByTimeBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.sortByTimeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.sortByTimeBtn.Font = New System.Drawing.Font("Candara", 12.0!)
+        Me.sortByTimeBtn.ForeColor = System.Drawing.Color.White
+        Me.sortByTimeBtn.Location = New System.Drawing.Point(493, 83)
+        Me.sortByTimeBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sortByTimeBtn.Name = "sortByTimeBtn"
+        Me.sortByTimeBtn.Size = New System.Drawing.Size(62, 28)
+        Me.sortByTimeBtn.TabIndex = 18
+        Me.sortByTimeBtn.Text = "Time"
+        Me.sortByTimeBtn.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(634, 667)
+        Me.Controls.Add(Me.sortByTimeBtn)
+        Me.Controls.Add(Me.sortByNameBtn)
+        Me.Controls.Add(Me.sortLabel)
         Me.Controls.Add(Me.showStatsBtn)
         Me.Controls.Add(Me.searchPlayerCB)
         Me.Controls.Add(Me.scoreLB)
@@ -352,4 +398,7 @@ Partial Class Form1
     Friend WithEvents scoreLB As ListBox
     Friend WithEvents searchPlayerCB As ComboBox
     Friend WithEvents showStatsBtn As Button
+    Friend WithEvents sortLabel As Label
+    Friend WithEvents sortByNameBtn As Button
+    Friend WithEvents sortByTimeBtn As Button
 End Class
